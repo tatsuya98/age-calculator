@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Age calculator app</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <section>
+        <div class="container">
+          <div class="inputs">
+            <div class="day-input">
+              <label for="day" class="label">Day</label>
+              <input type="text" name="day" id="day" placeholder="DD" />
+              <label for="day" class="error-day">Must be a valid day</label>
+            </div>
+            <div class="month-input">
+              <label for="month" class="label">Month</label>
+              <input type="text" name="month" id="month" placeholder="MM" />
+              <label for="month" class="error-month"
+                >Must be a valid month</label
+              >
+            </div>
+            <div class="year-input">
+              <label for="year" class="label">Year</label>
+              <input type="text" name="year" id="year" placeholder="YYYY" />
+              <label for="year" class="error-year">Must be in the past</label>
+            </div>
+          </div>
+          <div class="calculate">
+            <div class="line"></div>
+            <button class="button" type="submit">
+              <img src="./assets/images/icon-arrow.svg" alt="" />
+            </button>
+          </div>
+          <div class="result">
+            <div class="age-year">
+              <span class="year-value">--</span>
+              <p class="years">years</p>
+            </div>
+            <div class="age-month">
+              <span class="month-value">--</span>
+              <p class="months">months</p>
+            </div>
+            <div class="age-day">
+              <span class="day-value">--</span>
+              <p class="days">days</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
